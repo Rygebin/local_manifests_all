@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <!-- Remote name -->
+        <remote name="git"
+                        fetch="git://github.com" />
+
+        <!-- Device tree -->
+        <project path="device/huawei/kiwi" name ="Rygebin/omni_device_huawei_kiwi" remote="git" revision="cm-14.1" />
+        <!-- Kernel -->
+        <project path="kernel/huawei/kiwi" name ="Rygebin/omni_kernel_huawei_kiwi" remote="git" revision="cm-14.1" />
+         <!-- BoringSSL -->
+        <project path="external/sony/boringssl-combat" name ="LineageOS/android_external_sony_boringssl-compat" remote="git" revision="cm-14.1" />
+        <!-- Vendor -->
+        <project path="vendor/huawei/kiwi" name ="omni_proprietary_vendor_huawei_kiwi" remote="git" revision="cm-14.1" />
+        <!-- QCOM addons -->
+        <project path="device/qcom/common" name ="LineageOS/android_device_qcom_common" remote="git" revision="cm-14.1" />
+        <!-- Device Settings -->
+        <project path="packages/resources/devicesettings" name ="LineageOS/android_packages_resources_devicesettings" remote="git" revision="cm-14.1" />
+        <!-- STL port -->
+        <project path="external/stlport" name ="LineageOS/android_external_stlport" remote="git" revision="cm-14.1" />
+
+
+</manifest>
