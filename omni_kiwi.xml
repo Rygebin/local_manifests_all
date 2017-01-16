@@ -2,8 +2,7 @@
 <manifest>
 
 <!-- Remotes -->
-	<remote name="omni" fetch="https://github.com/omni/" revision="refs/heads/cm-14.1" />
-	<remote name="omni-caf" fetch="https://github.com/omni/" revision="refs/heads/android-7.1" />
+	<remote name="omni" fetch="https://github.com/omni/" revision="refs/heads/android-7.1" />
 	<remote name="laos" fetch="https://github.com/LineageOS/" revision="refs/heads/cm-14.1" />
 	<remote name="rygebin" fetch="https://github.com/Rygebin/" revision="refs/heads/android-7.1" />
 
