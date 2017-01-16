@@ -10,7 +10,7 @@
 
 <!-- Device -->
 	<project name="omni_device_huawei_kiwi" path="device/huawei/kiwi" remote="rygebin" />
-	<project name="omni_kernel/huawei_kiwi" path="kernel/huawei/kiwi" remote="rygebin" />
+	<project name="omni_kernel_huawei_kiwi" path="kernel/huawei/kiwi" remote="rygebin" />
 	<project name="proprietary_vendor_huawei_kiwi" path="vendor/huawei/kiwi" remote="rygebin" />
 
 <!-- Hardware Qcom (msm8916) -->
