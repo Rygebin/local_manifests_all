@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <!-- Remote name -->
-        <remote name="git"
-                        fetch="git://github.com" />
 
-        <!-- Device tree -->
-        <project path="device/huawei/kiwi" name ="Rygebin/omni_device_huawei_kiwi" remote="git" revision="cm-14.1" />
-        <!-- Kernel -->
-        <project path="kernel/huawei/kiwi" name ="Rygebin/omni_kernel_huawei_kiwi" remote="git" revision="cm-14.1" />
-         <!-- BoringSSL -->
-        <project path="external/sony/boringssl-combat" name ="LineageOS/android_external_sony_boringssl-compat" remote="git" revision="cm-14.1" />
-        <!-- Vendor -->
-        <project path="vendor/huawei/kiwi" name ="omni_proprietary_vendor_huawei_kiwi" remote="git" revision="cm-14.1" />
-        <!-- QCOM addons -->
-        <project path="device/qcom/common" name ="LineageOS/android_device_qcom_common" remote="git" revision="cm-14.1" />
-        <!-- Device Settings -->
-        <project path="packages/resources/devicesettings" name ="LineageOS/android_packages_resources_devicesettings" remote="git" revision="cm-14.1" />
-        <!-- STL port -->
-        <project path="external/stlport" name ="LineageOS/android_external_stlport" remote="git" revision="cm-14.1" />
+<!-- Remotes -->
+	<remote name="omni" fetch="https://github.com/omni/" revision="refs/heads/cm-14.1" />
+	<remote name="omni-caf" fetch="https://github.com/omni/" revision="refs/heads/android-7.1" />
+	<remote name="laos" fetch="https://github.com/LineageOS/" revision="refs/heads/cm-14.1" />
+	<remote name="rygebin" fetch="https://github.com/Rygebin/" revision="refs/heads/android-7.1" />
+
+<!-- Remove -->
+
+<!-- Device -->
+	<project name="omni_device_huawei_kiwi" path="device/huawei/kiwi" remote="rygebin" />
+	<project name="omni_kernel/huawei_kiwi" path="kernel/huawei/kiwi" remote="rygebin" />
+	<project name="proprietary_vendor_huawei_kiwi" path="vendor/huawei/kiwi" remote="rygebin" />
+
+<!-- Device Qcom Common -->
+   <project name ="android_device_qcom_common"  path="device/qcom/common remote="laos" />
+
+<!-- Hardware qcom (msm8916) -->
+	<project name="android_hardware_qcom_display-caf-msm8916" path="hardware/qcom/display-caf-msm8916" remote="omni" />
+	<project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="omni" />
+	<project name="android_hardware_qcom_audio-caf-msm8916" path="hardware/qcom/audio-caf-msm8916" remote="omni" />
+	<project name="android_hardware_qcom_media-caf-msm8916" path="hardware/qcom/media-caf-msm8916" remote="omni" />
+
+<!-- Sepolicy caf -->
+     <project name="android_device_qcom_caf-sepolicy" path="device/qcom/sepolicy" remote="laos"
+
+<!-- Other -->
+	<project name="android_external_stlport" path="external/stlport" remote="laos" />
+    <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="laos" />
+    <project name="android_external_sony_boringssl-combat" path="external/sony/boringssl-combat" remote="laos" />
+    <project name="vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices/ remote="omni" />
+
+<!-- Apps -->
+    <project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="omni"
+    <project name="android_packages_apps_Snap" path="packages/apps/Snap" remote="omni"
+
+<!-- Ant -->
+	<project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="omni" />
+	<project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="omni" />
+	<project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="omni" />
 
 
 </manifest>
