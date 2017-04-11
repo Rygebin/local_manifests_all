@@ -4,18 +4,23 @@
 <!-- Remotes -->
 	<remote name="omni" fetch="https://github.com/omnirom/" revision="refs/heads/android-7.1" />
 	<remote name="laos" fetch="https://github.com/LineageOS/" revision="refs/heads/cm-14.1" />
-	<remote name="rygebin" fetch="https://github.com/Rygebin/" revision="refs/heads/android-7.1" />
+	<remote name="themuppets" fetch="https://github.com/TheMuppets/" revision="refs/heads/cm-14.1" /> 
 
 <!-- Remove -->
 
 <!-- Device -->
-	<project name="omni_device_huawei_kiwi" path="device/huawei/kiwi" remote="rygebin" />
-	<project name="omni_kernel_huawei_kiwi" path="kernel/huawei/kiwi" remote="rygebin" />
-	<project name="omni_proprietary_vendor_huawei_kiwi" path="vendor/huawei/kiwi" remote="rygebin" />
+	<project name="android_device_huawei_kiwi" path="device/huawei/kiwi" remote="laos" />
+	<project name="android_kernel_huawei_kiwi" path="kernel/huawei/kiwi" remote="laos" />
+	<project name="proprietary_vendor_huawei" path="vendor/huawei" remote="themuppets" />
+
+<!-- Common -->
+	<project name"android_device_qcom_common" path="device/qcom/common" remote="laos" />
 
 <!-- Hardware Qcom (msm8916) -->
+	<project name="android_system_qcom" path="system/qcom" remote="laos" />
 	<project name="android_hardware_qcom_display-caf-msm8916" path="hardware/qcom/display-caf-msm8916" remote="omni" />
 	<project name="android_hardware_qcom_fm"  path="hardware/qcom/fm" remote="omni" />
+	<project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="omni" />
 	<project name="android_hardware_qcom_audio-caf-msm8916" path="hardware/qcom/audio-caf-msm8916" remote="omni" />
 	<project name="android_hardware_qcom_media-caf-msm8916" path="hardware/qcom/media-caf-msm8916" remote="omni" />
 	
