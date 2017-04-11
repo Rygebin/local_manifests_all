@@ -31,10 +31,10 @@
         <project name="android_external_stlport" path="external/stlport" remote="laos" />
 	<project name="android_external_libnfnetlink" path="externel/libnfnetlink" remote="omni" />
 	<project name="android_external_bson" path="external/bson" remote="laos" />
-	<project name="android_external_libnetfilter_conntrack" path="external_libnetfilter_conntrack" remote="omni" />
+	<project name="android_external_libnetfilter_conntrack" path="external/libnetfilter/conntrack" remote="omni" />
         <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="laos" />
         <project name="vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="omni" />
-        <project name="android_external_sony_boringssl-compat" path="external_sony_boringssl-compat" remote="laos" />
+        <project name="android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="laos" />
 
     	
 <!-- Apps -->
